@@ -14,6 +14,4 @@ func Delete(id int){
 	if _, err := stmt.Exec(fmt.Sprint(id)); err != nil {
 		log.Fatal("can't execute delete statment", err)
 	}
-
-	fmt.Println("delete success")
 }

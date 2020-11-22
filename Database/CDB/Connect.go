@@ -2,7 +2,6 @@ package cdb
 
 import (
 	"database/sql"
-	"fmt"
 	"log"
 	"os"
 
@@ -20,8 +19,6 @@ func init(){
 	if err != nil {
 		log.Fatal("Connect to database error", err)
 	}
-
-	fmt.Println("Connected to database")
 }
 
 func Conn() *sql.DB{

@@ -1,7 +1,6 @@
 package cdb
 
 import (
-	"fmt"
 	"log"
 )
 
@@ -18,6 +17,4 @@ func CreateTable(){
 	if _, err := db.Exec(createTb); err != nil {
 		log.Fatal("can't create table", err)
 	}
-
-	fmt.Println("connected to database.")
 }
